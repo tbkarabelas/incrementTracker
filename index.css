@@ -26,6 +26,8 @@ button{
     width: 175;
     margin-bottom: 5px;
     border-radius: 100px;
+    display: block;
+    margin: 5px auto;
 }
 
 
@@ -42,3 +44,4 @@ button{
     background-color: green;
 
 }
+

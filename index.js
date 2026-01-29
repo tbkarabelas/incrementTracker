@@ -5,6 +5,9 @@ let totalCount = 0
 
 let countEl = document.getElementById("count-el");
 
+let saveEl =  document.getElementById("total-el");
+
+// console.log(saveEl);
 // console.log(countEl);
 
 // listen for click, increment by 1
@@ -25,14 +28,20 @@ function decrease() {
 
     totalCount--;
 
-    countEl.innerText = totalCount;
+  
 
-    if (totalCount <=0){
-        countEl.innerText = 0;
-    } 
+   if( totalCount <= 0){
+    totalCount = 0;
+   }
+
+    countEl.innerText = totalCount;
 }
 
 function save(){
 
-    console.log(totalCount);
+   previousCount =" " + totalCount + " - ";
+   // console.log(previousCount);
+   saveEl.innerText += previousCount;
+
 }
+
