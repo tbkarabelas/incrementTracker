@@ -38,10 +38,13 @@ function decrease() {
 }
 
 function save(){
-
-   previousCount =" " + totalCount + " - ";
+    
+    previousCount = " " + totalCount + " - ";
    // console.log(previousCount);
    saveEl.innerText += previousCount;
 
+   countEl.innerText = 0;
+   totalCount = 0;
 }
+
 
